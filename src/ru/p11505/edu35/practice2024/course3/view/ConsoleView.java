@@ -58,7 +58,7 @@ public class ConsoleView {
             scanner.nextLine();
 
             for (int j = 0; j < fertilizerCount; j++) {
-                System.out.print("Введите название удобрения и расход на 1 м² (разделены запятой): ");
+                System.out.print("Введите название удобрения и расход на 1 м2 (разделены запятой): ");
                 String[] input = scanner.nextLine().split(",");
 
                 String fertilizerName = input[0].trim();
@@ -78,7 +78,7 @@ public class ConsoleView {
 
         for (int i = 0; i < fields.size(); i++) {
             Field field = fields.get(i);
-            System.out.println("\nПоле №" + (i + 1) + " (площадь: " + field.getArea() + " м²):");
+            System.out.println("\nПоле №" + (i + 1) + " (площадь: " + field.getArea() + " м2):");
 
             for (Fertilizer fertilizer : fertilizers.values()) {
                 if (field.containsFertilizer(fertilizer)) {
