@@ -23,6 +23,9 @@ public class Field {
         return consumptionPerSquareMeter.containsKey(fertilizer);
     }
 
+    public Map<Fertilizer, Double> getConsumptionPerSquareMeter() {
+        return consumptionPerSquareMeter;
+    }
 
     public FertilizerStats getTotal(Fertilizer fertilizer) {
         // Проверяем, зарегистрировано ли удобрение для поля

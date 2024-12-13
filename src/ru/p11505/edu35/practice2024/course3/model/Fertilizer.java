@@ -29,6 +29,10 @@ public class Fertilizer {
         return quantity;
     }
 
+    public List<FertilizerAdditionHistory> getAdditionHistories() {
+        return additionHistories;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
