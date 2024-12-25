@@ -33,11 +33,6 @@ public class ConsoleTest {
         System.out.println(field.getTotal(fertilizerB));
         System.out.println(field.getTotal(fertilizerC));
 
-        //todo Вывести потребность отсоритваронную по дате внесения удобрения
-
-        //todo создать новый класс для работы с историей внесения
-        //todo Метод по получения отсортированной коллекции , метод по получению общего количество по каждому удобрению
-
         // Вывод потребности, отсортированной по дате внесения удобрения
         List<FertilizerAdditionHistory> allHistories = new ArrayList<>();
         allHistories.addAll(fertilizerA.getAdditionHistories());
